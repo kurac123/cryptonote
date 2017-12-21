@@ -51,7 +51,7 @@ namespace
 
 bool command_line_preprocessor(const boost::program_options::variables_map& vm, LoggerRef& logger);
 
-void print_genesis_tx_hex() {
+void print_genesis_tx_hex(cryptocap--print-genesis-tx) {
   Logging::ConsoleLogger logger;
   CryptoNote::Transaction tx = CryptoNote::CurrencyBuilder(logger).generateGenesisTransaction();
   CryptoNote::BinaryArray txb = CryptoNote::toBinaryArray(tx);
